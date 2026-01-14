@@ -1,0 +1,26 @@
+server:
+  port: 8082
+
+spring:
+  application:
+    name: api-gateway
+  cloud:
+    gateway:
+      routes:
+        - id: order-service
+          uri: http://order-service:8080
+          predicates:
+            - Path=/api/orders/**
+          filters:
+            - StripPrefix=1
+        - id: payment-service
+          uri: http://payment-service:8081
+          predicates:
+            - Path=/api/payments/**
+          filters:
+            - StripPrefix=1
+
+jwt:
+  # JWT secret must be provided via the environment. No default is kept for security.
+  secret: ${JWT_SECRET}
+  expiration: 86400000

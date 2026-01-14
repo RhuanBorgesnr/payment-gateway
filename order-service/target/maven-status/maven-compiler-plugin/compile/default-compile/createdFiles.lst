@@ -1,0 +1,17 @@
+com/microservices/orderservice/application/CancelOrderUseCase.class
+com/microservices/orderservice/domain/OrderStatus.class
+com/microservices/orderservice/api/OrderController.class
+com/microservices/orderservice/application/OrderEventPublisher.class
+com/microservices/orderservice/infrastructure/config/UseCaseConfig.class
+com/microservices/orderservice/infrastructure/messaging/PaymentEventListener.class
+com/microservices/orderservice/domain/OrderRepository.class
+com/microservices/orderservice/application/CreateOrderUseCase.class
+com/microservices/orderservice/infrastructure/config/KafkaConfig.class
+com/microservices/orderservice/OrderServiceApplication.class
+com/microservices/orderservice/application/ConfirmOrderUseCase.class
+com/microservices/orderservice/application/PaymentProcessedEvent.class
+com/microservices/orderservice/infrastructure/persistence/OrderJpaRepository.class
+com/microservices/orderservice/domain/Order.class
+com/microservices/orderservice/application/OrderCreatedEvent.class
+com/microservices/orderservice/infrastructure/messaging/KafkaOrderEventPublisher.class
+com/microservices/orderservice/infrastructure/persistence/OrderRepositoryAdapter.class

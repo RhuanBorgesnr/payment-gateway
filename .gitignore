@@ -1,0 +1,10 @@
+# Ignore local env files that may contain secrets
+.env
+
+# Java / Maven
+/target
+*.log
+
+# OS files
+.DS_Store
+
